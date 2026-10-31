@@ -1,0 +1,18 @@
+@import 'bulma/css/bulma.min.css';
+
+:root {
+    --bulma-family-primary: 'Instrument Sans', system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bulma-scheme-main-bis);
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.is-monospace {
+    font-family: var(--bulma-family-code);
+}

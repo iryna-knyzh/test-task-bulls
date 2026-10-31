@@ -1,0 +1,44 @@
+This is a PHP developer test task that requires you to develop an automation
+solution that will parse data from Google Sheets files with similar structures,
+save the data to a database on a daily basis, and provide a configuration file for
+customization.
+
+Here are the main requirements:
+1. There are several Google Sheets files with similar structures, but some
+may have additional columns or different column positions.
+2. The automation solution should take a list of files and extract data from
+each file, then save it to a database on a daily basis.
+3. You should provide a configuration file/db table where the list of files to
+parse, tabs to extract from each file, and columns to extract from each
+tab can be customized.
+4. There should be a matching process between the file and database table
+where the data will be saved.
+5. For example, if a file has data in columns [date, product_name, price,
+amount], the configuration table should specify that this data should be
+stored in the 'sales' table with columns [date=>date,
+product_name=>name,
+price=>product_price, amount=>amount]. The names of columns in the
+file and the database table can be different, and the configuration table
+should allow data from one file to be saved to multiple tables with different
+structures.
+6. If a new column is added to a table in the configuration file/db table that
+does not exist in the corresponding database table, the automation
+solution should alter the database table and add the new column. The
+solution should also extract and store data in this new column.
+7. You should provide instructions on how to create Google API
+tokens for integration.
+8. You can either send a link to a git repository with detailed instructions on
+how to set up and run the project or provide access details to a place where
+the project can be reviewed. If you choose the latter option, you should
+provide all access details and explain how the project was set up.
+9. Main technologies - Laravel, MySQL
+10.Will be a big plus if you`ll create script that will fully setup the project on
+Linux (Ubuntu) system
+11. For full stack only: Create UI that will manage functionality described above
+
+Overall, you need to create an automation solution that can extract data from
+Google Sheets files with different structures and store the data in a database
+according to a
+customized configuration. You also need to provide detailed instructions on
+how to create Google API tokens and how to set up and run the project on
+Linux (Ubuntu).
